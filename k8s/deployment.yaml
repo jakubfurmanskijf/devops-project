@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: api
-          image: ghcr.io/jakubfurmanskijf/devops-fastapi:1.0
+          image: devops-fastapi:1.0
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
 
